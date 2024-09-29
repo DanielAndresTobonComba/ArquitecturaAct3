@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-Act3Application<act3>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.act3.act3.Act3Application",
+            "projectName": "act3",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
