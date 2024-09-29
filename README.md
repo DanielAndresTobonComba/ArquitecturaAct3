@@ -35,18 +35,18 @@ A continuación, se presentan los pasos para ejecutar el código de la API:
    - Clona el repositorio del proyecto a tu máquina local.
 
 2. **Ejecutar el Servidor**:
-   - Abre una terminal y navega al directorio del proyecto.
-   - Ejecuta el comando:
-     ```bash
-     mvn spring-boot:run
-     ```
-   - Esto iniciará el servidor en `http://localhost:8090`.
-  
-   - Otra posibildiad es tener alguna extension en visual studio code (el que yo usé) capas de correr un codigo java con springboot , maven , jdk etc.
+
+   - Como yo ejecute es con una extension en visual studio code (el que yo usé) capás de correr un codigo java con springboot , maven , jdk etc.
+     
+   - Extensiones para visual code:
+      - Extension Pack for Java.
+      - Extension Pack for Java Auto Config.
 
 3. **Probar la API**:
    - Abre Postman o cualquier otra herramienta de pruebas de API.
    - Utiliza los endpoints proporcionados en la documentación para realizar las operaciones deseadas.
+     
+   - Usar algun sistema gestor de db como workbench("el que use") para poder hacer seguimiento de los datos y la tabla usuario, ademas de poder usar codigo sql.
 
 4. **Interactuar con la API**:
    - Prueba cada uno de los endpoints: crear, obtener, editar y eliminar usuarios, utilizando los cuerpos JSON especificados en la documentación.
@@ -55,7 +55,7 @@ A continuación, se presentan los pasos para ejecutar el código de la API:
 Este ejercicio proporciona una base sólida para comprender cómo construir y manejar una API RESTful utilizando Spring Boot, permitiendo a los desarrolladores adquirir habilidades prácticas en el desarrollo de aplicaciones web.
 
 
-# API de Gestión de Usuarios
+# Gestión de Usuarios
 
 Esta API permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre los usuarios.
 
@@ -71,17 +71,20 @@ Esta API permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) s
     "correo": "juan@example.com"
 }
 ```
+![crear](https://github.com/user-attachments/assets/52e7ef0e-b2d0-469d-8beb-58673d2990ee)
 
 ### 2. Obtener Todos los Usuarios
 - **Método**: `GET`
 - **URL**: `http://localhost:8090/usuarios/todos`
 - **Cuerpo**: N/A
+![todos](https://github.com/user-attachments/assets/4bc47a2c-e839-441a-bfa8-99d8dfba7cc7)
 
 ### 3. Obtener un Usuario por ID
 - **Método**: `GET`
 - **URL**: `http://localhost:8090/usuarios/buscar/1`
 - **Cuerpo**: N/A
 
+![buscar](https://github.com/user-attachments/assets/7612246d-becf-4eb3-859e-77de4c1bbde8)
 
 
 ### 4. Editar un Usuario
@@ -94,9 +97,11 @@ Esta API permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) s
     "correo": "juan_actualizado@example.com"
 }
 ```
+![editar](https://github.com/user-attachments/assets/26d331af-4d00-4531-8bee-9b57b53f1460)
 
-### 6. Eliminar un Usuario
+### 5. Eliminar un Usuario
 - **Método**: `DELETE`
 - **URL**: `http://localhost:8090/usuarios/eliminar/1`
 - **Cuerpo**: N/A
+![eliminar](https://github.com/user-attachments/assets/a04ebfaf-0ae1-4d22-b8a2-329a2eca8082)
 
